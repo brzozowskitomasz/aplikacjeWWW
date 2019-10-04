@@ -1,4 +1,4 @@
 # aplikacjeWWW
-141050 -nrrr
+141050
 
 
