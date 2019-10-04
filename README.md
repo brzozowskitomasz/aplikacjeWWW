@@ -1,3 +1,3 @@
 # aplikacjeWWW
-141050
+141050 -nr
 
