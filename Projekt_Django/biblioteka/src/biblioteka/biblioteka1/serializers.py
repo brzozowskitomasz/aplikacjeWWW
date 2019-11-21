@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.db import models
 
+
 class biblioteka2(serializers.Serializer):
     nazwa = models.CharField(max_length=45)
 
