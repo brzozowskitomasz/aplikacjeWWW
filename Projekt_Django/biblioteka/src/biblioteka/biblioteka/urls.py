@@ -16,8 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url,include
+from rest_framework.urlpatterns import format_suffix_patterns
+from biblioteka1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api-auth/', include('rest_framework.urls')),
+    url(r'^autorzylista/', views.Autorzylista.as_view()),
+    url(r'^wypozyczenia/', views.wypozyczenial.as_view()),
+    url(r'^kategorie/', views.kategoriel.as_view()),
+    url(r'^wydawnictwo/', views.wydawnictwol.as_view()),
+    url(r'^ksiazki/', views.ksiazkil.as_view()),
+    url(r'^czytelnicy/', views.czytelnicyl.as_view()),
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
